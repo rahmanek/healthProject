@@ -1,0 +1,240 @@
+.btn-low{
+	color:#000000;
+}
+
+.row {
+	margin-top:30px;
+}
+
+#header{
+	background-color: #3e5459;
+	border-color: #3e5459;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+#logoImage{
+	font-family: Arial;
+	font-size:32px;
+    width:100%;
+	margin-top:25px;
+}
+
+#medumoLine{
+	position:absolute;
+	top:33px;
+	z-index: 1;
+	fill: #5c9fd8;
+
+}
+
+#logoBox{
+	padding: 0 10px;
+	background-color:#FFFFFF;
+	display:table;
+	margin:auto;
+	width:75%;
+}
+
+.marginBottom10{
+    margin-bottom:10px;
+}
+
+
+.marginBottom25{
+	margin-bottom:25px;
+}
+
+.autoMargin{
+	display:table;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+.marginTop15{
+	margin-top: 15px;
+}
+
+.errorMessage{
+	color: #0074D1;
+	font-weight: regular;
+	margin-bottom:0.5em;
+	font-size:1em;
+}
+
+.errorBox{
+	margin-top:10px;
+}
+
+#requiredErrors{
+	display:none;
+}
+
+.marginTop25{
+	margin-top:25px;
+}
+.funkyradio div {
+    clear: both;
+    /*margin: 0 50px;*/
+    overflow: hidden;
+}
+.funkyradio label {
+    /*min-width: 400px;*/
+    width: 100%;
+    border-radius: 3px;
+    border: 0px solid #D1D3D4;
+    font-weight: normal;
+    color: #707070;
+}
+
+.funkyradio label:hover {
+    background-color: #F9F9F9;
+    color: #313131;
+
+}
+
+.funkyradio input[type="radio"]:empty, .funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+.funkyradio input[type="radio"]:empty ~ label, .funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before, .funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2.5em;
+    background: #F0F0F0;
+    border-radius: 3px 3px 3px 3px;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #F0F0F0;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+.funkyradio input[type="radio"]:checked ~ label:before, .funkyradio input[type="checkbox"]:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+}
+.funkyradio input[type="radio"]:checked ~ label, .funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+.funkyradio input[type="radio"]:focus ~ label:before, .funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+.funkyradio-default input[type="radio"]:checked ~ label:before, .funkyradio-default input[type="checkbox"]:checked ~ label:before {
+    color: #333;
+    background-color: #ccc;
+}
+.funkyradio-primary input[type="radio"]:checked ~ label:before, .funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #337ab7;
+}
+.funkyradio-success input[type="radio"]:checked ~ label:before, .funkyradio-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+}
+.funkyradio-danger input[type="radio"]:checked ~ label:before, .funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #d9534f;
+}
+.funkyradio-warning input[type="radio"]:checked ~ label:before, .funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #f0ad4e;
+}
+.funkyradio-info input[type="radio"]:checked ~ label:before, .funkyradio-info input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #73BAF3;
+}
+
+.funkyradio-info{
+    border: none;
+    font-size: 1.25em;
+}
+/*.form-control {
+    background-color: #F0F0F0;
+    box-shadow: none;
+    border: none;
+    height: 50px;
+    margin-top: 17px;
+    font-size: 1.25em;
+}*/
+
+.btn-primary {
+    background-color: #0074D1;
+    border: none;
+    // width: 33%;
+    height: 50px;
+    margin-top: 17px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+h3 {
+    font: Arial
+    font-weight: bold;
+    font-size:1.5em;
+    color: #313131;
+}
+
+h5 {
+    font: Arial;
+    font-weight: normal;
+    font-size: 1.25em;
+    color: #313131;
+}
+
+h6 {
+    font: Arial;
+    font-weight: normal;
+    font-size: 1.25em;
+    color: #313131;
+}
+
+.copilotButton{
+    background-color: #E6F0F6;
+    color: #999898;
+}
+
+.listAlign {
+    padding-left:15px;
+}
+
+.copilotSlot{
+    padding: 0 5px;
+}
+
+.liteGray{
+	background-color:#F4F4F4;
+}

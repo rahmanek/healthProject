@@ -1,0 +1,109 @@
+$primary-color: #1D7FC1;
+$secondary-color: #FF6A00;
+$tertiary-color: #B0B3B6;
+$tertiary-dark: #808486;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    font-size:16px;
+}
+body {
+    font-family: 'Lato', Arial, sans-serif;
+}
+#app {
+  height: 100%;
+}
+
+.btn-primary{
+   background-color: $primary-color;
+   border: 1px solid black;
+   font-weight: bold;
+}
+
+.btn-tertiary{
+   background-color: $tertiary-color;
+   border: 1px solid black;
+   font-weight:bold;
+   color:white;
+}
+
+.btn-tertiary:hover{
+   background-color: $tertiary-dark;
+   color:white;
+}
+
+.placeholderText{
+
+}
+
+.form-control:focus {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+.input-group-addon{
+	background-color: #F0F0F0;
+	border: none;
+}
+
+.form-control {
+    background-color: #F0F0F0;
+    box-shadow: none;
+    border: none;
+    /*height: 50px;*/
+    /*margin-top: 17px;*/
+    /*font-size: 1.25em;*/
+}
+
+.errorMessage{
+	color: #0074D1;
+	font-size:1em;
+}
+
+.marginBottom15{
+  margin-bottom:15px;
+}
+.marginBottom25{
+  margin-bottom:25px;
+}
+
+.marginBottom75 {
+  margin-bottom:75px;
+}
+
+.marginTop5{
+  margin-top:5px;
+}
+
+.marginTop15{
+  margin-top:15px;
+}
+
+.marginTop25{
+  margin-top:25px;
+}
+.marginTop75{
+  margin-top:75px;
+}
+
+.btn-change-input {
+    padding: 0;
+    font-size: inherit;
+    background: none !important;
+    border: none !important;
+    color: #337ab7;
+}
+
+// Prevent zooming on input fields
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"],
+input[type="tel"], input[type="color"] { font-size: 16px; }

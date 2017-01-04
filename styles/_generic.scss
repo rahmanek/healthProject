@@ -1,0 +1,114 @@
+.bold{
+    font-weight:bold;
+}
+
+.unbold{
+	font-weight: normal !important;
+}
+
+.displayTable{
+   display:table;
+}
+
+.inlineBloc{
+   display:inline-block;
+}
+
+.displayTableCellMiddle{
+   display:table-cell;
+   vertical-align:middle;
+   margin:0 auto;
+}
+
+.left-align{
+	text-align: left;
+}
+
+.displayNone{
+   display: none;
+}
+
+.autoMargin{
+   margin:auto;
+}
+
+.nowrap{
+   white-space: nowrap;
+}
+
+.overflowHidden{
+   overflow:hidden;
+}
+
+.normal{
+   font-weight:normal;
+}
+
+.lineHeightNormal{
+   line-height: normal;
+}
+
+.lineHeight1{
+   line-height:1;
+}
+
+.fontSize12{
+   font-size: 12px;
+}
+
+.fontSize16{
+   font-size:16px !important;
+}
+
+.fontSize20{
+   font-size:20px;
+}
+
+.fontSize24{
+   font-size:24px;
+}
+
+.fontSize28{
+   font-size:28px;
+}
+
+.relative{
+   position:relative;
+}
+
+.fullHeight{
+    height:100%;
+}
+
+.fullWidth{
+    width:100%;
+}
+
+.floatRight{
+    float:right;
+}
+.floatLeft{
+    float:left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.noPaddingLeft{
+   padding-left: 0;
+}
+
+.noPaddingRight{
+   padding-right: 0;
+}
+
+@for $i from 0 through 10 {
+   @each $positionType in Left, Right, Top, Bottom{
+      @each $boundryType in margin, padding{
+         .#{$boundryType}#{$positionType}#{$i * 5} {
+            #{$boundryType}-#{$positionType}: #{$i * 5}px;
+         }
+      }
+   }
+}

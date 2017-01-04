@@ -1,0 +1,275 @@
+@import 'generic';
+@import 'common';
+
+#timelineSelect{
+	color:#999999;
+	font-size:16px;
+}
+
+.standardText{
+	font-size: 1em;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.floatRight{
+	float:right;
+}
+
+.row {
+	margin-top:15px;
+}
+
+#header{
+	background-color: #3e5459;
+	border-color: #3e5459;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+#logoImage{
+	font-family: Arial;
+	font-size:32px;
+	max-height:70px;
+}
+
+#medumoLine{
+	position:absolute;
+	top:33px;
+	z-index: 1;
+	fill: #5c9fd8;
+
+}
+
+
+.autoMargin{
+	display:table;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.errorMessage{
+	color:#286090;
+	margin-bottom:5px;
+	font-size:14px;
+}
+
+#errorMessages{
+	padding-bottom:15px;
+}
+
+.errorBox{
+	margin-top:10px;
+}
+
+.form-control:focus {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    background-color: #F9F9F9;
+    border: none;
+    box-shadow: none;
+}
+
+.input-group .form-control {
+    height: 3em;
+}
+.input-group-addon{
+	background-color: #F0F0F0;
+	border: none;
+}
+
+.form-control {
+    background-color: #F0F0F0;
+    box-shadow: none;
+    border: none;
+    /*height: 50px;*/
+    /*margin-top: 17px;*/
+    /*font-size: 1.25em;*/
+}
+
+.viewSwitchButton{
+	border: 1px solid #286090;
+	background-color: #FFF;
+	color: #286090;
+}
+
+.datePadding{
+	padding-left: 0;
+	padding-right: 7px;
+}
+
+.timePadding{
+	padding-left: 7px;
+	padding-right: 0;
+}
+
+.noSpaceRight{
+	padding-right:0;
+	margin-right:0;
+}
+
+.noSpace{
+	padding: 0;
+	margin: 0;
+}
+
+#timelineSelect, #diabetesSelect{
+	border-radius:4px;
+}
+
+.form-control{
+    background-color: #F0F0F0;
+    box-shadow: none;
+
+}
+
+.form-control:focus {
+	 background-color: #F9F9F9;
+	 box-shadow: none;
+}
+
+
+.funkyradio div {
+    clear: both;
+    /*margin: 0 50px;*/
+    overflow: hidden;
+}
+.funkyradio label {
+    /*min-width: 400px;*/
+    width: 100%;
+    border-radius: 3px;
+    border: 0px solid #D1D3D4;
+    font-weight: normal;
+    color: #707070;
+}
+
+.funkyradio label:hover {
+    background-color: #F9F9F9;
+    color: #313131;
+
+}
+
+.funkyradio input[type="radio"]:empty, .funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+.funkyradio input[type="radio"]:empty ~ label, .funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 34px;
+    text-indent: 3.25em;
+    /*margin-top: 2em;*/
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before, .funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 34px;
+    background: #F0F0F0;
+    border-radius: 3px 3px 3px 3px;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .7em;
+    color: #F0F0F0;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+.funkyradio input[type="radio"]:checked ~ label:before, .funkyradio input[type="checkbox"]:checked ~ label:before {
+    content:'\2714';
+    text-indent: .7em;
+    color: #333;
+    background-color: #ccc;
+}
+.funkyradio input[type="radio"]:checked ~ label, .funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+.funkyradio input[type="radio"]:focus ~ label:before, .funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before, .funkyradio-info input[type="checkbox"]:checked ~ label:before {
+    color: #000;
+    background-color: #F0F0F0;
+}
+
+#epicCheck{
+    white-space: nowrap;
+}
+
+.page-wrap {
+    position: relative;
+    height: 100%;
+    width:100%;
+    z-index: 0;
+}
+
+.register-nav-toggles span {
+    color: #1d7fc1;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 60px;
+    text-align: center;
+    float: right;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.register-nav-toggles span i {
+    font-size: 2em;
+}
+
+.slide-out-bar {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    width: 380px;
+    min-height: 100%;
+    background-color: #1d7fc1;
+    color: #fff;
+    padding-top: 2.5em;
+}
+.close-bar-btn {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 0.35em;
+    font-size: 2em;
+}
+.slide-out-bar .section {
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+    padding-top: 20px;
+    border-top: 4px solid #19689e;
+    line-height: 1.25;
+    letter-spacing: 0.1px;
+}
+.slide-out-bar .section h4 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.slide-out-bar.help-bar .section ol{
+
+    list-style-position: inside;
+    padding-left:0;
+}
+.slide-out-bar.help-bar .section ol li{
+    margin-bottom: 10px;
+}

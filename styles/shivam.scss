@@ -1,0 +1,338 @@
+/*********************
+Schedule Styles
+*********************/
+
+
+.page-wrapper {
+    background-color: #f4f4f4;
+    min-height: 100%;
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
+}
+.page-wrapper:after {
+  content: "";
+  display: block;
+}
+#footer, .page-wrapper:after {
+  height: $footer-height;
+}
+/***********************
+Timeline Styles
+***********************/
+
+.step a {
+    text-decoration: none !important;
+}
+
+.timeline-upper-text {
+  margin: 35px 0 0 0;
+  text-align: center;
+  // font-size: 14px;
+  font-weight: 700;
+  p{
+	  margin-bottom: 0;
+  }
+}
+// .timeline-upper-text span {
+//   text-transform: uppercase;
+//   color: #1d7fc1;
+// }
+
+.timeline-event {
+   /*border-left: #1d7fc1 6px solid;*/
+    padding:25px 0 40px 0;
+    font-size: 1em ;
+    height: 40px;
+    color: #000;
+
+}
+.timeline-event:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 80px;
+    position: absolute;
+    top:0px;
+
+    background-color: $app-gray;
+
+}
+.timeline-event span#procedure {
+  font-size: 18px;
+  position: absolute;
+  top: -23px;
+  left: 0px;
+  font-weight: 700;
+  color:#1D7FC1;
+}
+.timeline-event.todo span#procedure,
+.timeline-event.today span#procedure,  {
+  color: #1d7fc1;
+}
+.step.current + .step .timeline-event:before {
+  height: 110px;
+  top: -20px;
+}
+.step.current + .step .timeline-event.last-step:before {
+  height: 60px;
+}
+
+
+.first-step {
+    padding-top: 0;
+    margin-top: 25px;
+}
+.first-step:before {
+  height: 55px;
+  border-radius: 15px;
+  top: 26px;
+}
+
+.first-step.todo:before {
+  height: 50px;
+  border-radius: 15px;
+  top: 0px;
+}
+
+
+.last-step {
+    padding-bottom: 0;
+}
+.last-step:before {
+  height: 40px;
+  border-radius: 0 0 15px 15px;
+  top: -1px;
+
+}
+.timeline-event.todo:before,
+.timeline-event.today.first-step:before {
+   background-color: $app-gray;
+}
+.timeline-event.today.todo:before {
+  background-color:  $app-gray;
+}
+
+.timeline-event.today:before {
+  height: 40px;
+  z-index: 1;
+}
+
+
+.timeline-event-bubble {
+    width: 21px;
+    height: 25px;
+    position:absolute;
+    left: -14px;
+    top: 20px;
+    font-size: 38px;
+    background: #fafafa;
+    color: #F5A623;
+}
+.step .timeline-event.no-today {
+  position: relative;
+}
+
+.step .timeline-event.no-today:after {
+  content: '';
+  height: 35px;
+  width: 35px;
+  background-image: url('./today-star-icon-gray1.png');
+  background-size: contain;
+  position: absolute;
+  left: -14.5px;
+  top: -20px;
+}
+.step.current  {
+   background-color: #f0ecec;
+}
+.step.current .timeline-event-bubble {
+   height: 30px;
+   line-height: 1.15;
+
+}
+p.timeline-date {
+    color: #1d7fc1;
+    margin-bottom: 0;
+    margin-left: 5px;
+    width: 40px;
+    float: left;
+    font-weight: 600;
+}
+.timeline-event.todo .timeline-date {
+  color: #bfbfbf;
+}
+
+.timeline-event p, .timeline-event-btn {
+    display: inline-block;
+}
+
+.timeline-event i:nth-of-type(1) {
+  z-index: 3;
+  background: none;
+}
+
+ .timeline-event i:nth-of-type(2){
+font-size: 50px;
+    top: 13.5px;
+    left: -20px;
+    color: white;
+    z-index: 2;
+    background: none;
+}
+
+.timeline-event h4 {
+    color: #7c7d7c;
+}
+.timeline-view-btn {
+    letter-spacing: 0.5px;
+    position: relative;
+    top: -7px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.timeline-view-btn:hover {
+
+  box-shadow: 0 4px 5px rgba(0,0,0,0.15), 0 1px 1px rgba(0,0,0,0.11);
+}
+
+.step-details {
+    background-color: #1b6fa7;
+}
+/*
+.step:nth-of-type(even) {
+   background-color: #f0ecec;
+} */
+
+h3.numCircle {
+
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* IE8 fix */
+    width: 40px;
+    height: 40px;
+    padding-top: 4px;
+    border: 2px solid #c5c5c5;
+    color: #666;
+    text-align: center;
+}
+/*h3.numCircle-done {
+    color: #4caf50;
+    border-color: #66bb6a;
+}*/
+.step h4 {
+    line-height: 1.25;
+}
+.step-content {
+    padding-left: 2em;
+}
+/***************
+START OF REPEATED WELCOME CSS
+******************/
+.no-bold {
+  font-weight: 400 !important;
+}
+.line-break {
+    height: 1px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cdcccc;
+}
+.section-h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #595959;
+    line-height: 1.25;
+}
+.section-h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #595959;
+    line-height: 1.25;
+}
+.section-h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #595959;
+    line-height: 1.25;
+}
+
+.section-h2.upper-text {
+      color: #1d7fc1;
+}
+/***************
+END OF REPEATED WELCOME CSS
+******************/
+#header {
+  height: 40px;
+  position: absolute;
+  top: 0px;
+
+}
+
+/***************
+INFO CSS
+******************/
+
+span.addressInfo {
+  font-size: 18px;
+}
+
+.unsubscribeInfo {
+  background-color: #EDEDED;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+/***************
+END INFO CSS
+******************/
+@media (max-width: 480px) {
+
+    #timeline-wrapper {
+  margin-bottom: 10px;
+  height:100vh;
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+    .step-topic {
+        margin-left: 15px;
+         width: 135px;
+         position: relative;
+         left: 5.5%;
+         top: -5px;
+         line-height: 1.15;
+
+}
+     p.timeline-date {
+        position: relative;
+        left: 5%;
+        top: -3px;
+     }
+ }
+
+ @media (min-width: 480px) {
+
+    p.timeline-date {
+        margin-right: 2em;
+        margin-left: 1.5em;
+    }
+
+ }
+
+ #rotate-message { display: none; }
+@media only screen and (orientation:landscape){
+	 #node-wrapper { display:none; }
+	 #rotate-message { display:block; }
+}
+
+@media only screen and (orientation:portrait){
+	 #node-wrapper {display:block;}
+	 #rotate-message { display:none; }
+}
